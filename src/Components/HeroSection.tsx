@@ -10,7 +10,7 @@ const HeroSection = (props: Props) => {
         <>
             <div className="md:min-h-fit w-full bg-primary relative z-10">
                 <Image src="/background.png" alt="her-background" fill className="object-cover md:object-contain absolute top-0 bottom-0 left-0 right-0 -z-10 opacity-40" />
-                <div className="container h-full flex-1 py-32 min-h-[inherit] ">
+                <div className="container h-full flex-1 pt-32 md:pb-24 min-h-[inherit] ">
                     <div className="flex h-full min-h-[inherit]  justify-between">
                         <div className="my-auto flex-1 max-w-[32rem]">
                             <h3>A TRUSTED DIGITAL AGENCY</h3>
