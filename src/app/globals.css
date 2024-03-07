@@ -15,4 +15,17 @@ body {
 	.btn-blue {
 		@apply bg-lightblue hover:bg-[#4ba7b9] transition-all;
 	}
+	.btn-trans-white {
+		@apply bg-transparent border border-white text-white hover:border-lightblue hover:bg-lightblue transition-all;
+	}
+
+	h1 {
+		@apply text-3xl sm:text-4xl md:text-5xl font-bold tracking-widest;
+	}
+	h2 {
+		@apply font-bold text-3xl tracking-widest;
+	}
+	h3 {
+		@apply font-semibold text-3xl tracking-wide;
+	}
 }

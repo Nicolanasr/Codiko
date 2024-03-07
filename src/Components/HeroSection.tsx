@@ -13,7 +13,7 @@ const HeroSection = (props: Props) => {
                 <div className="container h-full flex-1 pt-32 md:pb-24 min-h-[inherit] ">
                     <div className="flex h-full min-h-[inherit]  justify-between">
                         <div className="my-auto flex-1 max-w-[32rem]">
-                            <h3>A TRUSTED DIGITAL AGENCY</h3>
+                            <span className="tracking-[0.2rem]">A TRUSTED DIGITAL AGENCY</span>
                             <div className="flex">
                                 <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold tracking-widest leading-tight">We make your business look amazing</h1>
                                 <span className="relative h-24 w-8 mt-4">

@@ -6,17 +6,17 @@ const config: Config = {
 		transitionDuration: {
 			DEFAULT: "350ms",
 		},
-		colors: {
-			primary: "#15191E",
-			lightblue: "#6DB1BF",
-			lightgrey: "#29323F",
-			bluegrey: "#2c3846",
-			moreblue: "#10A2DE",
-		},
 		extend: {
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+			},
+			colors: {
+				primary: "#15191E",
+				lightblue: "#6DB1BF",
+				lightgrey: "#29323F",
+				bluegrey: "#2c3846",
+				moreblue: "#10A2DE",
 			},
 		},
 		container: {
