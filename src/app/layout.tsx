@@ -19,8 +19,8 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
-                <link rel="icon" href="/favicon_io(1)/favicon-32x32.png" type="image/png" sizes="32x32" />
-                <link rel="apple-touch-icon" href="/public/favicon_io(1)/apple-touch-icon.png" type="image/png" sizes="32x32" />
+                <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png" sizes="32x32" />
             </head>
             <body className={roboto.className}>{children}</body>
         </html>
