@@ -20,9 +20,10 @@ export default function Home() {
                     </div>
                     <div className="flex-1">
                         <p className="tracking-wider md:leading-8">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            Codiko is your gateway to innovative and transformative digital solutions.We are committed to reshaping the way businesses
+                            thrive in the digital realm. At Codiko, we{"'"}re not just creators; we{"'"}re architects of your digital success. Whether
+                            it{"'"}s crafting responsive websites, cutting-edge mobile apps, or robust software, we bring your ideas to life with
+                            precision and creativity. Trust us to be your partner in the journey of digital evolution.{" "}
                         </p>
                         <Link href="#" className="btn btn-blue mt-6">
                             Learn More
@@ -32,30 +33,33 @@ export default function Home() {
             </section>
 
             <section id="services" className="my-40">
-                <div className="div mr-28 text-[#000] tracking-wide">
-                    <div className="bg-[#F0F0F0] h-80 w-full rounded-r-[100px] grid grid-cols-4 border-[#00000052]">
-                        <div className="px-8 text-[#000] h-full border-r-[1px] flex border-[#00000052]">
-                            <div className=" my-auto">
+                <div className="div lg:mr-10 xl:mr-28 text-[#000] tracking-wide">
+                    <div className="bg-[#F0F0F0] xl:h-[22rem] w-full lg:rounded-r-[100px] grid lg:grid-cols-4 border-[#00000052]">
+                        <div className="border-b lg:border-b-0 px-8 text-[#000] h-full border-r-[1px] flex border-[#00000052]">
+                            <div className=" my-auto py-8 lg:py-0">
                                 <h2 className="text-3xl font-semibold">
                                     Our <span className="text-lightblue tracking-wider">Services</span>
                                 </h2>
                                 <p>The things we are able to do and deliver</p>
+                                <Link href="#" className="mt-4 inline-block font-medium text-lightblue">
+                                    View more →
+                                </Link>
                             </div>
                         </div>
                         <ServiceCard
-                            title="DIGITAL PRODUCTS"
-                            text="Digital Branding Web & Mobile Sites User Interface Design Responsive Techs"
-                            button={{ text: "Learn More", url: "#" }}
+                            title="Digital Development"
+                            url="#"
+                            text="Experience the power of Codiko with our full-spectrum digital development services, covering web, mobile, and software solutions. From captivating websites to cutting-edge mobile apps and robust software development, we bring your digital vision to life."
                         />
                         <ServiceCard
-                            title="SEO & CONTENT WRITING"
-                            text="Digital Strategy User Experience Design User Interface Design Mobile SitesDigital Strategy User Experience"
-                            button={{ text: "Learn More", url: "#" }}
+                            title="User-Centric Design and Strategy"
+                            url="#"
+                            text="Rely on us to enhance user experiences, boost SEO, and provide strategic consulting aligned with your business goals. From E-commerce solutions to seamless integration, we ensure impactful and SEO friendly digital solutions"
                         />
                         <ServiceCard
-                            title="DIGITAL MARKETING"
-                            text="Custom Platform Back-End Executions Interface Apps Mobile Systems"
-                            button={{ text: "Learn More", url: "#" }}
+                            title="Sustained Performance and Support"
+                            url="#"
+                            text="Beyond development, we offers ongoing maintenance and support services. Rely on us to keep your digital assets running smoothly, optimizing performance, and ensuring the security of your applications."
                             style={{ borderBottomRightRadius: "100px" }}
                         />
                     </div>
@@ -65,7 +69,7 @@ export default function Home() {
             <section id="why-us" className="container relative">
                 <div className="bg-[#222931] relative rounde-tl-md rounded-tr-md">
                     <h2 className="text-center font-extrabold text-3xl tracking-widest h-fit relative -top-[18px]">WHY US</h2>
-                    <div className="grid sm:grid-cols-2 md:grid-cols-4 max-w-4xl justify-center gap-4 md:justify-between mx-auto px-8 py-10  flex-wrap">
+                    <div className="grid sm:grid-cols-2 md:grid-cols-4 max-w-4xl justify-center gap-4 md:justify-between mx-auto px-8 py-2 md:py-10  flex-wrap">
                         <div className="text-center tracking-wider">
                             <h2 className="text-4xl font-semibold pb-2 tracking-[0.5rem]">15</h2>
                             <p className="text-xs">PROJECTS COMPLETED</p>
@@ -91,15 +95,16 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="md:px-8 pt-8 flex flex-col md:flex-row">
-                        <div className="flex-1 relative aspect-square w-full md:aspect-auto ">
+                        <div className="flex-1 relative aspect-video w-full md:aspect-auto ">
                             <Image src="/christina-wocintechchat-com-p0qKsW3uqA4-unsplash 1.png" className="object-cover object-center" fill alt="" />
                         </div>
                         <div className="flex-1 py-4 md:p-6 bg-primary md:-ml-20 relative z-[1] md:mt-[13rem]">
-                            <h3 className="leading-10">We are trusted by more than 100 customer</h3>
+                            <h3 className="leading-10">We are trusted by more than 100 customers</h3>
                             <p className="mt-4 tracking-wider leading-relaxed">
-                                Voluptatum ipsa quasi voluptatibus eos qui eum consequatur blanditiis. Sunt perspiciatis necessitatibus qui. Explicabo
-                                quia omnis soluta et. Quis adipisci distinctio cumque. Nihil tempora quia iste optio reprehenderit excepturi rerum
-                                voluptatem.
+                                Codiko has earned the trust of a diverse clientele who rely on our expertise to bring their digital visions to life.
+                                Our commitment to excellence and customer satisfaction has established Codiko as a trusted partner in the
+                                ever-evolving world of web, mobile, and software development. Join the growing community of businesses that have
+                                chosen Codiko for unparalleled digital solutions.
                             </p>
                             <Link href="#" className="btn btn-blue mt-6">
                                 READ MORE
@@ -116,16 +121,16 @@ export default function Home() {
                     <div className="h-24 bg-opacity-70 mb-8 w-[1px] mx-auto bg-lightblue"></div>
 
                     <div className="flex gap-6 w-fit m-auto">
-                        <Link href="#" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all" >
+                        <Link href="#" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all">
                             <FaInstagram className=" m-auto w-full opacity-70 h-full group-hover:opacity-100 transition-all" />
                         </Link>
-                        <Link href="#" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all" >
+                        <Link href="#" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all">
                             <FaWhatsapp className=" m-auto w-full opacity-70 h-full group-hover:opacity-100 transition-all" />
                         </Link>
-                        <Link href="#" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all" >
+                        <Link href="#" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all">
                             <FaFacebook className=" m-auto w-full opacity-70 h-full group-hover:opacity-100 transition-all" />
                         </Link>
-                        <Link href="#" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all" >
+                        <Link href="#" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all">
                             <FaLinkedin className=" m-auto w-full opacity-70 h-full group-hover:opacity-100 transition-all" />
                         </Link>
                     </div>
@@ -133,7 +138,9 @@ export default function Home() {
                     <div className="mx-auto w-fit">
                         <h2 className="tracking-wide mt-10">Have a project in mind?</h2>
                         <p className="mt-4 text-lg tracking-wider">Let{"'"}s disuss it</p>
-                        <Link href="#" className="btn btn-trans-white font-normal mt-4">Contact us</Link>
+                        <Link href="#" className="btn btn-trans-white font-normal mt-4">
+                            Contact us
+                        </Link>
                     </div>
                 </div>
             </section>

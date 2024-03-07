@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"], subsets: ["cyrillic", "latin"] });
 
 export const metadata: Metadata = {
     title: "Codiko",
@@ -21,7 +22,7 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon_io(1)/favicon-32x32.png" type="image/png" sizes="32x32" />
                 <link rel="apple-touch-icon" href="/public/favicon_io(1)/apple-touch-icon.png" type="image/png" sizes="32x32" />
             </head>
-            <body className={inter.className}>{children}</body>
+            <body className={roboto.className}>{children}</body>
         </html>
     );
 }

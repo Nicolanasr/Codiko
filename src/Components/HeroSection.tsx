@@ -9,27 +9,34 @@ const HeroSection = (props: Props) => {
     return (
         <>
             <div className="md:min-h-fit w-full bg-primary relative z-10">
-                <Image src="/background.png" alt="her-background" fill className="object-cover md:object-contain absolute top-0 bottom-0 left-0 right-0 -z-10 opacity-40" />
+                <Image
+                    src="/background.png"
+                    alt="her-background"
+                    fill
+                    className="object-cover md:object-contain absolute top-0 bottom-0 left-0 right-0 -z-10 opacity-40"
+                />
                 <div className="container h-full flex-1 pt-32 md:pb-24 min-h-[inherit] ">
                     <div className="flex h-full min-h-[inherit]  justify-between">
                         <div className="my-auto flex-1 max-w-[32rem]">
-                            <span className="tracking-[0.2rem]">A TRUSTED DIGITAL AGENCY</span>
+                            <span className="tracking-[0.2rem] uppercase">Crafting Future-Ready Solutions</span>
                             <div className="flex">
-                                <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold tracking-widest leading-tight">We make your business look amazing</h1>
+                                <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold tracking-widest leading-tight">
+                                    Unlock Your Digital Potential
+                                </h1>
                                 <span className="relative h-24 w-8 mt-4">
                                     <Image src="/aquarius 1.png" fill className="object-contain" alt="aquarius" />
                                 </span>
                             </div>
-                            <p className="mt-6 tracking-wider">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam.
+                            <p className="mt-6 tracking-wider leading-loose">
+                                Unleash the power of your online presence with Codiko – where innovation meets seamless functionality. Elevate your
+                                brand, captivate your audience, and thrive in the digital landscape.
                             </p>
                             <div className="flex mt-4 gap-8 items-center">
-                                <Link href="#" className="btn btn-blue " >
+                                <Link href="#" className="btn btn-blue ">
                                     Get Started
                                 </Link>
 
-                                <Link href="#" className="group projects" >
+                                <Link href="#" className="group projects">
                                     See Our Projects <span className="inline-block transition-all group-hover:translate-x-2">→</span>
                                 </Link>
                             </div>
