@@ -14,11 +14,11 @@ const Footer = (props: Props) => {
                     <div className="">
                         <Link href="/" className="inline-block">
                             <Image
-                                src="/codiko.png"
+                                src="/codiko-logo.png"
                                 height={50}
                                 width={130}
                                 alt="codiko logo"
-                                className="object-contain filter brightness-0 invert"
+                                className="object-contain"
                             />
                         </Link>
                         <p className="text-xs mt-4 tracking-wider leading-loose text-opacity-50 font-light max-w-sm">

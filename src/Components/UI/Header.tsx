@@ -9,7 +9,7 @@ const Header = (props: Props) => {
         <header className="absolute left-0 right-0 top-0 z-20 md:h-16 py-3">
             <div className="container relative h-full w-full flex flex-col md:flex-row gap-4 items-center">
                 <Link href="/" className="inline-block min-h-8 h-full w-[135px] relative">
-                    <Image src="/codiko.png" fill alt="codiko logo" className="object-contain filter brightness-0 invert" />
+                    <Image src="/codiko-logo.png" fill alt="codiko logo" className="object-contain" />
                 </Link>
 
                 <nav className="mx-16 flex-1 hidden md:block">
