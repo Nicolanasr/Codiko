@@ -18,7 +18,7 @@ body {
 	}
 
 	.btn-blue {
-		@apply bg-lightblue hover:bg-[#4ba7b9] transition-all;
+		@apply bg-lightblue hover:bg-[#49BCC4] transition-all;
 	}
 	.btn-trans-white {
 		@apply bg-transparent border border-white text-white hover:border-lightblue hover:bg-lightblue transition-all;
