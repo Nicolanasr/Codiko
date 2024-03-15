@@ -3,7 +3,8 @@ import MainLayout from "../Components/Layout/MainLayout";
 import HeroSection from "../Components/HeroSection";
 import Link from "next/link";
 import ServiceCard from "@/Components/UI/ServiceCard";
-
+import { MacbookScroll } from "@/Components/UI/MacbookScroll";
+import { ContainerScroll } from "@/Components/UI/ContainerScrollAnimation";
 
 export default function Home() {
     return (
@@ -113,8 +114,32 @@ export default function Home() {
                 </div>
             </section>
 
+            <section id="" className="mt-20">
+                <div className="-mt-80">
+                    <MacbookScroll title="CODIKODEV" src="/linear.webp" />
+                </div>
+            </section>
+
             <section id="projects" className="mt-20">
-                <h2 className="text-center">OUR PROJECTS</h2>
+                <div className="container">
+                    <ContainerScroll
+                        titleComponent={<h2 className="text-center font-extrabold text-3xl tracking-widest">OUR PROJECTS</h2>}
+                        users={[
+                            { name: "1", designation: "#1", image: "/background.png" },
+                            { name: "1", designation: "", image: "/about img(1).png" },
+                            { name: "1", designation: "", image: "/background.png" },
+                            { name: "1", designation: "", image: "/background.png" },
+                            { name: "1", designation: "", image: "/about img(1).png" },
+                            { name: "1", designation: "", image: "/background.png" },
+                            { name: "1", designation: "", image: "/about img(1).png" },
+                            { name: "1", designation: "", image: "/background.png" },
+                            { name: "1", designation: "", image: "/about img(1).png" },
+                            { name: "1", designation: "", image: "/about img(1).png" },
+                            { name: "1", designation: "", image: "/about img(1).png" },
+                            { name: "1", designation: "", image: "/about img(1).png" },
+                        ]}
+                    />
+                </div>
             </section>
 
             <section id="connect" className="mt-32">
@@ -122,7 +147,6 @@ export default function Home() {
                     <Image src="/cover-image 1.png" fill className="-z-[1] object-contain object-right-bottom" alt="" />
 
                     <div className="h-24 bg-opacity-70 mb-8 w-[1px] mx-auto bg-lightblue"></div>
-
 
                     <div className="mx-auto w-fit">
                         <h2 className="tracking-wide mt-10">Have a project in mind?</h2>
@@ -133,7 +157,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
         </MainLayout>
     );
 }

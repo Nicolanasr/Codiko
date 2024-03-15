@@ -15,7 +15,7 @@ const HeroSection = (props: Props) => {
                     fill
                     className="object-cover md:object-contain absolute top-0 bottom-0 left-0 right-0 -z-10 opacity-40"
                 />
-                <div className="container h-full flex-1 pt-32 md:pb-24 min-h-[inherit] ">
+                <div className="container h-full flex-1 pt-40 md:pb-24 min-h-[inherit] ">
                     <div className="flex h-full min-h-[inherit]  justify-between">
                         <div className="my-auto flex-1 max-w-[32rem]">
                             <span className="tracking-[0.2rem] uppercase">Crafting Future-Ready Solutions</span>
@@ -49,7 +49,7 @@ const HeroSection = (props: Props) => {
                                 <Image src="/abstract-shape 1.png" height={50} width={50} className="object-contain opacity-90" alt="" />
                             </div>
                         </div>
-                        <div className="flex-1 hidden md:flex m-auto h-72">
+                        <div className="flex-1 hidden md:flex m-auto h-80 pb-12">
                             <div className="relative h-full max-h-96 my-auto block ml-auto flex-1">
                                 <Image src="/heroPuzzle.png" fill alt="hero-puzzle" className="object-contain" />
                             </div>
