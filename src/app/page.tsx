@@ -5,11 +5,29 @@ import Link from "next/link";
 import ServiceCard from "@/Components/UI/ServiceCard";
 import { MacbookScroll } from "@/Components/UI/MacbookScroll";
 import { ContainerScroll } from "@/Components/UI/ContainerScrollAnimation";
+import { HeroParallax } from "@/Components/UI/HeroParallax";
 
 export default function Home() {
     return (
         <MainLayout>
-            <HeroSection />
+            <HeroParallax
+                products={[
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                    { thumbnail: "/about img(1).png", title: "", link: "" },
+                ]}
+            />
+
+            {/* <HeroSection /> */}
 
             <section id="about-us" className="my-12">
                 <div className="container flex flex-col lg:flex-row gap-8 lg:gap-24 items-center">
@@ -34,7 +52,7 @@ export default function Home() {
 
             <section id="services" className="my-40">
                 <div className="div lg:mr-10 xl:mr-28 text-[#000] tracking-wide">
-                    <div className="bg-[#F0F0F0] xl:h-[22rem] w-full lg:rounded-r-[100px] grid lg:grid-cols-4 border-[#00000052]">
+                    <div className="bg-[#F0F0F0] xl:h-[22rem] w-full lg:rounded-r-[100px] grid lg:grid-cols-5 border-[#00000052]">
                         <div className="border-b lg:border-b-0 px-8 text-[#000] h-full border-r-[1px] flex border-[#00000052]">
                             <div className=" my-auto py-8 lg:py-0">
                                 <h2 className="text-3xl font-semibold">
@@ -47,19 +65,24 @@ export default function Home() {
                             </div>
                         </div>
                         <ServiceCard
-                            title="Digital Development"
+                            title="Mobile & Web Design and Development"
                             url="#"
-                            text="Experience the power of Codiko with our full-spectrum digital development services, covering web, mobile, and software solutions. From captivating websites to cutting-edge mobile apps and robust software development, we bring your digital vision to life."
+                            text={`We create awesome mobile apps and websites that look great and work like a charm! Whether you're on your phone or computer, we've got you covered with designs that pop and features that make life easier.`}
                         />
                         <ServiceCard
-                            title="User-Centric Design and Strategy"
+                            title="Optimization and SEO"
                             url="#"
-                            text="Rely on us to enhance user experiences, boost SEO, and provide strategic consulting aligned with your business goals. From E-commerce solutions to seamless integration, we ensure impactful and SEO friendly digital solutions"
+                            text={`We're on a mission to get your website noticed by Google using some SEO magic. And to top it off, we'll make sure it loads faster than you can say "instant gratification" so your visitors have a smooth and speedy experience.`}
                         />
                         <ServiceCard
-                            title="Sustained Performance and Support"
+                            title="Hosting and Maintenance"
                             url="#"
-                            text="Beyond development, we offers ongoing maintenance and support services. Rely on us to keep your digital assets running smoothly, optimizing performance, and ensuring the security of your applications."
+                            text={`We handle all the technical stuff, from setting up reliable hosting services to ensuring everything runs smoothly and securely. With regular updates, backups, and monitoring, we handle your online presence, so you can focus on what you do best: running your business.`}
+                        />
+                        <ServiceCard
+                            title="Custom Software Development"
+                            url="#"
+                            text="We craft personalized solutions designed exclusively for your business. From concept to completion, we work closely with you to understand your needs and create software that streamlines your operations, boosts efficiency, and helps you achieve your goals."
                             style={{ borderBottomRightRadius: "100px" }}
                         />
                     </div>
