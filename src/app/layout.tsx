@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
+import Header from "@/Components/UI/Header";
+import Footer from "@/Components/UI/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"], subsets: ["cyrillic", "latin"] });
 
 export const metadata: Metadata = {
     title: "Codiko",
-    description: "Codiko",
+    description: "Codiko dev",
 };
 
 export default function RootLayout({
@@ -22,7 +24,11 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png" sizes="32x32" />
             </head>
-            <body className={roboto.className}>{children}</body>
+            <body className={roboto.className}>
+                <Header />
+                <main>{children}</main>
+                <Footer />
+            </body>
         </html>
     );
 }

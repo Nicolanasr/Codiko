@@ -9,7 +9,7 @@ import { HeroParallax } from "@/Components/UI/HeroParallax";
 
 export default function Home() {
     return (
-        <MainLayout>
+        <>
             <HeroParallax
                 products={[
                     { thumbnail: "/about img(1).png", title: "", link: "" },
@@ -59,7 +59,7 @@ export default function Home() {
                                     Our <span className="text-lightblue tracking-wider">Services</span>
                                 </h2>
                                 <p>The things we are able to do and deliver</p>
-                                <Link href="#" className="mt-4 inline-block font-medium text-lightblue">
+                                <Link href="/services" className="mt-4 inline-block font-medium text-lightblue">
                                     View more →
                                 </Link>
                             </div>
@@ -180,6 +180,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-        </MainLayout>
+        </>
     );
 }
