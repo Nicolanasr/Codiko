@@ -33,6 +33,52 @@ body {
 	h3 {
 		@apply font-semibold text-3xl tracking-wide;
 	}
-	p {
+}
+
+.animate-in .puzzle1 {
+	animation: animation1-puzzle1 5s forwards;
+}
+.animate-in .puzzle2 {
+	animation: animation1-puzzle2 5s forwards;
+}
+.animate-in .puzzle3 {
+	animation: animation1-puzzle3 5s forwards;
+}
+.animate-in .puzzle4 {
+	transform-origin: right;
+	animation: animation1-puzzle4 5s forwards;
+}
+
+@keyframes animation1-puzzle1 {
+	from {
+		transform: none;
+	}
+	to {
+		transform: translate(32px, 28px);
+	}
+}
+
+@keyframes animation1-puzzle2 {
+	from {
+		transform: none;
+	}
+	to {
+		transform: translate(32px, -25px);
+	}
+}
+@keyframes animation1-puzzle3 {
+	from {
+		transform: none;
+	}
+	to {
+		transform: translate(-32px, -25px);
+	}
+}
+@keyframes animation1-puzzle4 {
+	from {
+		transform: none;
+	}
+	to {
+		transform: translate(-78px, 116px) rotate(20deg);
 	}
 }

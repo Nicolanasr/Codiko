@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import CardWithNumber from "./UI/CardWithNumber";
 import Image from "next/image";
+import HeroPuzzle from "./UI/HeroPuzzle";
 
 type Props = {};
 
@@ -17,7 +18,7 @@ const HeroSection = (props: Props) => {
                 />
                 <div className="container h-full flex-1 pt-40 md:pb-24 min-h-[inherit] ">
                     <div className="flex h-full min-h-[inherit]  justify-between">
-                        <div className="my-auto flex-1 max-w-[32rem]">
+                        <div className="my-auto flex-1 max-w-[45rem]">
                             <span className="tracking-[0.2rem] uppercase">Crafting Future-Ready Solutions</span>
                             <div className="flex">
                                 <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold tracking-widest leading-tight">
@@ -28,30 +29,34 @@ const HeroSection = (props: Props) => {
                                 </span>
                             </div>
                             <p className="mt-6 tracking-wider leading-loose">
-                                Unleash the power of your online presence with Codiko – where innovation meets seamless functionality. Elevate your
+                                Precision in Code, Mastery in Software development. Transforming Visions into Seamless Reality – Elevate your
                                 brand, captivate your audience, and thrive in the digital landscape.
                             </p>
-                            <div className="flex mt-4 gap-8 items-center">
-                                <Link href="#" className="btn btn-blue ">
-                                    Get Started
+                            <div className="flex flex-col sm:flex-row mt-4 gap-8 items-center">
+                                <Link href="#contact-us" className="btn btn-blue ">
+                                    Let{"'"}s Talk About Your Project
                                 </Link>
 
                                 <Link href="#" className="group projects">
                                     See Our Projects <span className="inline-block transition-all group-hover:translate-x-2">→</span>
                                 </Link>
                             </div>
-                            <div className="mt-6 flex gap-1 sm:gap-8">
-                                <CardWithNumber defaultHover number={100} additional="+" text="CLIENT" />
-                                <CardWithNumber number={30} text="STARTUP" />
-                                <CardWithNumber number={40} text="PRODUCTS" />
+                            <div className="mt-8 grid lg:grid-cols-4 gap-1 sm:gap-2">
+                                <CardWithNumber defaultHover text="Stunning Designs" />
+                                <CardWithNumber text="Responsive Development" />
+                                <CardWithNumber text="User-Friendly Interfaces" />
+                                <CardWithNumber text={`SEO
+Optimization`} />
                             </div>
                             <div className="ml-auto w-fit">
                                 <Image src="/abstract-shape 1.png" height={50} width={50} className="object-contain opacity-90" alt="" />
                             </div>
                         </div>
-                        <div className="flex-1 hidden md:flex m-auto h-80 pb-12">
+                        <div className="flex-1 hidden md:flex m-auto h-96 pb-12">
                             <div className="relative h-full max-h-96 my-auto block ml-auto flex-1">
-                                <Image src="/heroPuzzle.png" fill alt="hero-puzzle" className="object-contain" />
+                                {/* <Image src="/heroPuzzle.png" fill alt="hero-puzzle" className="object-contain" /> */}
+                                <HeroPuzzle />
+
                             </div>
                         </div>
                     </div>
