@@ -5,7 +5,17 @@ import Link from "next/link";
 import ServiceCard from "@/Components/UI/ServiceCard";
 import { ContainerScroll } from "@/Components/UI/ContainerScrollAnimation";
 import ContactUs from "@/Components/ContactUs";
-import { getData } from "./services/layout";
+
+import path from "path";
+import { promises as fs } from "fs";
+
+const getData = async () => {
+    const jsonDirectory = path.join(process.cwd(), "/src/data/services");
+    const fileContents: any = await fs.readFile(jsonDirectory + "/services-data.json", "utf8");
+
+    return JSON.parse(fileContents)["services"];
+};
+
 
 export default async function Home() {
     const servicesData: ServiceType[] = await getData();

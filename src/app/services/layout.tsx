@@ -2,12 +2,12 @@ import ServicesNavbar from "@/Components/ServicesNavbar";
 import React from "react";
 
 type Props = { children: React.ReactNode; };
+import Image from "next/image";
 
 import path from "path";
 import { promises as fs } from "fs";
-import Image from "next/image";
 
-export const getData = async () => {
+const getData = async () => {
     const jsonDirectory = path.join(process.cwd(), "/src/data/services");
     const fileContents: any = await fs.readFile(jsonDirectory + "/services-data.json", "utf8");
 
