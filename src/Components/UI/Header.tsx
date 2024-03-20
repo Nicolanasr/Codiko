@@ -56,8 +56,8 @@ const Header = (props: Props) => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/portfolio" className="group text-gray-300 hover:text-white relative transition-all px-4 py-2">
-                                Projects
+                            <Link href="#how-we-do-it" className="group text-gray-300 hover:text-white relative transition-all px-4 py-2">
+                                Our Process
                                 <span className="h-[2px] absolute bottom-0 left-0 right-unset w-0 group-hover:w-full transition-all bg-lightblue"></span>
                             </Link>
                         </li>

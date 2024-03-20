@@ -8,6 +8,7 @@ import ContactUs from "@/Components/ContactUs";
 
 import path from "path";
 import { promises as fs } from "fs";
+import Roadmap from "@/Components/Roadmap";
 
 const getData = async () => {
     const jsonDirectory = path.join(process.cwd(), "/src/data/services");
@@ -90,6 +91,7 @@ export default async function Home() {
             </section>
 
             <section id="why-us" className="container relative">
+
                 <div className="bg-[#222931] relative rounde-tl-md rounded-tr-md">
                     <h2 className="text-center font-extrabold text-3xl tracking-widest h-fit relative -top-[18px]">WHY US</h2>
                     <ul className="tracking-wider text-left justify-center gap-4 md:justify-between mx-auto px-10 py-2 md:py-10  flex-wrap">
@@ -147,7 +149,20 @@ export default async function Home() {
                 </div>
             </section>
 
-            <section id="projects" className="mt-20">
+            <section id="how-we-do-it" className="mt-24">
+                <div className="container">
+                    <h2 className="text-center">How we do it</h2>
+                    {/* <p className="mt-4 tracking-wide max-w-lg mx-auto text-center">By following this structured workflow, we ensure a smooth and successful journey from concept to launch, delivering a high-quality website that meets your objectives and exceeds your expectations.</p> */}
+                    <div className="mt-12">
+                        <Roadmap />
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            {/* <section id="projects" className="mt-20">
                 <div className="container">
                     <ContainerScroll
                         titleComponent={<h2 className="text-center font-extrabold text-3xl tracking-widest">OUR PROJECTS</h2>}
@@ -167,7 +182,7 @@ export default async function Home() {
                         ]}
                     />
                 </div>
-            </section>
+            </section> */}
 
             <section id="contact-us" className="mt-32">
                 <div className="relative text-center w-full pb-20 container">

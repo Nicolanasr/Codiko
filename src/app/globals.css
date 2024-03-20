@@ -9,16 +9,18 @@ html {
 
 body {
 	background-color: #15191e;
-	color: #fff;
 }
 
 @layer base {
+	body {
+		@apply text-slate-300;
+	}
 	.btn {
 		@apply px-6 py-2 rounded-md font-[500] inline-block;
 	}
 
 	.btn-blue {
-		@apply bg-lightblue hover:bg-[#49BCC4] transition-all;
+		@apply bg-lightblue hover:bg-[#49BCC4] transition-all text-white;
 	}
 	.btn-trans-white {
 		@apply bg-transparent border border-white text-white hover:border-lightblue hover:bg-lightblue transition-all;
@@ -28,7 +30,7 @@ body {
 		@apply text-3xl sm:text-4xl md:text-5xl font-bold tracking-widest;
 	}
 	h2 {
-		@apply font-bold text-3xl tracking-widest;
+		@apply font-bold text-4xl tracking-wide;
 	}
 	h3 {
 		@apply font-semibold text-3xl tracking-wide;
