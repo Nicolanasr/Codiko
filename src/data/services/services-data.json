@@ -3,22 +3,29 @@
 		{
 			"title": "Design and Development",
 			"slug": "design-development",
-			"short_description": "We create awesome mobile apps and websites that look great and work like a charm! Whether you're on your phone or computer, we've got you covered with designs that pop and features that make life easier."
+			"short_description": "We create awesome mobile apps and websites that look great and work like a charm! Whether you're on your phone or computer, we've got you covered with designs that pop and features that make life easier.",
+			"order": 1,
+			"image": "/christina-wocintechchat-com-p0qKsW3uqA4-unsplash 1.png",
+			"features": ["feature 1", "feaure 2", "feaure 3"],
+			"full_description": "<h4>Key Outputs</h4> <h4>How we make it happen</h4>"
 		},
 		{
 			"title": "Optimization and SEO",
 			"slug": "optimization-seo",
-			"short_description": "We're on a mission to get your website noticed by Google using some SEO magic. And to top it off, we'll make sure it loads faster than you can say \"instant gratification\" so your visitors have a smooth and speedy experience."
+			"short_description": "We're on a mission to get your website noticed by Google using some SEO magic. And to top it off, we'll make sure it loads faster than you can say \"instant gratification\" so your visitors have a smooth and speedy experience.",
+			"order": 2
 		},
 		{
 			"title": "Hosting and Maintenance",
 			"slug": "hosting-maintenance",
-			"short_description": "We handle all the technical stuff, from setting up reliable hosting services to ensuring everything runs smoothly and securely. With regular updates, backups, and monitoring, we handle your online presence, so you can focus on what you do best: running your business."
+			"short_description": "We handle all the technical stuff, from setting up reliable hosting services to ensuring everything runs smoothly and securely. With regular updates, backups, and monitoring, we handle your online presence, so you can focus on what you do best: running your business.",
+			"order": 3
 		},
 		{
 			"title": "Custom Software Development",
 			"slug": "custom-software-development",
-			"short_description": "We craft personalized solutions designed exclusively for your business. From concept to completion, we work closely with you to understand your needs and create software that streamlines your operations, boosts efficiency, and helps you achieve your goals."
+			"short_description": "We craft personalized solutions designed exclusively for your business. From concept to completion, we work closely with you to understand your needs and create software that streamlines your operations, boosts efficiency, and helps you achieve your goals.",
+			"order": 4
 		}
 	]
 }

@@ -11,9 +11,9 @@ const ServicesLayout = ({ children, servicesData }: Props) => {
     const path = usePathname();
 
     return (
-        <div className="container py-32">
-            <div className="flex relative">
-                <nav className="pr-12 sticky top-24 h-fit">
+        <div className="container py-20">
+            <div className="flex flex-col md:flex-row relative">
+                <nav className="pr-12 md:sticky top-0 h-fit py-20">
                     <ul className="space-y-8">
                         {servicesData?.map((item, index) => {
                             const url = `/services/${item.slug || generateSlug(item.title)}`;
@@ -22,8 +22,8 @@ const ServicesLayout = ({ children, servicesData }: Props) => {
                                 <li key={url} className="">
                                     <Link
                                         href={url}
-                                        className={`group relative text-xl ${path === url ? "text-gray-50 font-bold" : "text-gray-400"
-                                            } hover:text-gray-50 transition-all`}
+                                        className={`group relative text-xl ${path === url ? "text-gray-200 font-bold text-opacity-100" : "text-gray-400 text-opacity-30 "
+                                            } hover:text-gray-50 hover:text-opacity-100 transition-all`}
                                     >
                                         {twoDigits(index + 1)} {item.title}{" "}
                                         <span
@@ -35,7 +35,7 @@ const ServicesLayout = ({ children, servicesData }: Props) => {
                         })}
                     </ul>
                 </nav>
-                <div className="flex-1 h-screen">{children}</div>
+                <div className="flex-1">{children}</div>
             </div>
         </div>
     );

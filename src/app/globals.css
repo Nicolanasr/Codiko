@@ -33,6 +33,12 @@ body {
 	h3 {
 		@apply font-semibold text-3xl tracking-wide;
 	}
+	.services-description h4 {
+		@apply text-xl font-bold text-gray-200 capitalize mt-6;
+	}
+	.services-description p {
+		@apply text-gray-400 leading-loose tracking-wider mt-2;
+	}
 }
 
 .animate-in .puzzle1 {
