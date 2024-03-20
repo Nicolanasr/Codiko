@@ -17,6 +17,7 @@ const getData = async () => {
 const ServicesLayout = async ({ children }: Props) => {
     const data = await getData();
 
+
     return (
         <div className="relative">
             <Image src="/background.png" fill alt="" quality={100} className="opacity-30 object-contain object-right" />
