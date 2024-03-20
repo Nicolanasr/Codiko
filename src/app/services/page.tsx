@@ -1,18 +1,16 @@
-import { Metadata } from 'next';
-import React, { useEffect, useState } from 'react'
+"use server"
+
+import { redirect, useRouter } from 'next/navigation';
+import { getData } from './layout';
 
 type Props = {}
 
-export const metadata: Metadata = {
-    title: "Our Services - Codiko",
-    description: "Our Services - Codiko",
-};
-
 
 const ServicesPage = async (props: Props) => {
+    const data: ServiceType[] = await getData();
 
     return (
-        <></>
+        redirect(`/services/${data[0]?.slug}`)
     )
 }
 

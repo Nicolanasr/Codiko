@@ -42,17 +42,17 @@ body {
 }
 
 .animate-in .puzzle1 {
-	animation: animation1-puzzle1 5s forwards;
+	animation: animation1-puzzle1 3.5s forwards;
 }
 .animate-in .puzzle2 {
-	animation: animation1-puzzle2 5s forwards;
+	animation: animation1-puzzle2 3.5s forwards;
 }
 .animate-in .puzzle3 {
-	animation: animation1-puzzle3 5s forwards;
+	animation: animation1-puzzle3 3.5s forwards;
 }
 .animate-in .puzzle4 {
 	transform-origin: right;
-	animation: animation1-puzzle4 5s forwards;
+	animation: animation1-puzzle4 3.5s forwards;
 }
 
 @keyframes animation1-puzzle1 {

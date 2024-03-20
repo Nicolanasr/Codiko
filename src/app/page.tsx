@@ -3,12 +3,13 @@ import MainLayout from "../Components/Layout/MainLayout";
 import HeroSection from "../Components/HeroSection";
 import Link from "next/link";
 import ServiceCard from "@/Components/UI/ServiceCard";
-import { MacbookScroll } from "@/Components/UI/MacbookScroll";
 import { ContainerScroll } from "@/Components/UI/ContainerScrollAnimation";
-import { HeroParallax } from "@/Components/UI/HeroParallax";
 import ContactUs from "@/Components/ContactUs";
+import { getData } from "./services/layout";
 
-export default function Home() {
+export default async function Home() {
+    const servicesData: ServiceType[] = await getData();
+
     return (
         <>
             {/* <HeroParallax
@@ -65,27 +66,15 @@ export default function Home() {
                                 </Link>
                             </div>
                         </div>
-                        <ServiceCard
-                            title="Mobile & Web Design and Development"
-                            url="#"
-                            text={`We create awesome mobile apps and websites that look great and work like a charm! Whether you're on your phone or computer, we've got you covered with designs that pop and features that make life easier.`}
-                        />
-                        <ServiceCard
-                            title="Optimization and SEO"
-                            url="#"
-                            text={`We're on a mission to get your website noticed by Google using some SEO magic. And to top it off, we'll make sure it loads faster than you can say "instant gratification" so your visitors have a smooth and speedy experience.`}
-                        />
-                        <ServiceCard
-                            title="Hosting and Maintenance"
-                            url="#"
-                            text={`We handle all the technical stuff, from setting up reliable hosting services to ensuring everything runs smoothly and securely. With regular updates, backups, and monitoring, we handle your online presence, so you can focus on what you do best: running your business.`}
-                        />
-                        <ServiceCard
-                            title="Custom Software Development"
-                            url="#"
-                            text="We craft personalized solutions designed exclusively for your business. From concept to completion, we work closely with you to understand your needs and create software that streamlines your operations, boosts efficiency, and helps you achieve your goals."
-                            style={{ borderBottomRightRadius: "100px" }}
-                        />
+                        {servicesData?.map((item, index) => (
+                            <ServiceCard
+                                key={item.slug + index}
+                                title={item.title}
+                                url={`/services/${item.slug}`}
+                                text={item.short_description}
+                                style={{ borderBottomRightRadius: index === servicesData.length - 1 ? "100px" : "" }}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>
@@ -125,7 +114,12 @@ export default function Home() {
                     <div className="md:px-8 pt-8 flex flex-col md:flex-row">
                         <div className="flex-1 relative aspect-video w-full md:aspect-auto ">
                             {/* <Image src="/christina-wocintechchat-com-p0qKsW3uqA4-unsplash 1.png" className="object-cover object-center" fill alt="" /> */}
-                            <video muted controls src="/yt5s.io-Web Design Agency video background-(480p).mp4" className="h-full w-full object-cover" />
+                            <video
+                                muted
+                                controls
+                                src="/yt5s.io-Web Design Agency video background-(480p).mp4"
+                                className="h-full w-full object-cover"
+                            />
                         </div>
                         <div className="flex-1 py-4 md:p-6 bg-primary md:-ml-20 relative z-[1] md:mt-[10rem]">
                             <h3 className="leading-10">We have the solution for you!</h3>
@@ -141,7 +135,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
 
             <section id="projects" className="mt-20">
                 <div className="container">

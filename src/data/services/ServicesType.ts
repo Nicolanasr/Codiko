@@ -3,7 +3,8 @@ type ServiceType = {
 	slug: string;
 	short_description: string;
 	order: number;
-	image: string;
-	features: string[];
+	image?: string;
+	animation?: any;
+	features?: string[];
 	full_description: string;
 };

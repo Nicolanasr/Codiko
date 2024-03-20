@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { FormEvent, useRef, useState } from "react";
 import toast from "react-hot-toast";
@@ -7,33 +7,33 @@ type Props = {};
 
 const ContactUs = (props: Props) => {
     const formRef = useRef<HTMLFormElement>(null);
-    const [formIsSubmitting, setFormIsSubmitting] = useState(false)
+    const [formIsSubmitting, setFormIsSubmitting] = useState(false);
 
     const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
         setFormIsSubmitting(true);
-        event.preventDefault()
+        event.preventDefault();
 
         try {
-            const formData = new FormData(event.currentTarget)
+            const formData = new FormData(event.currentTarget);
             const body = Object.fromEntries(formData);
 
-            const response = await fetch('/api/sendmail', {
+            const response = await fetch("/api/sendmail", {
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
                 },
-                method: 'POST',
+                method: "POST",
                 body: JSON.stringify(body),
-            })
+            });
             if (!response.ok) {
                 throw new Error();
             }
             toast("Message sent successfully :)");
             formRef.current?.reset();
         } catch (error) {
-            toast.error("Something went wrong, please try again :(")
+            toast.error("Something went wrong, please try again :(");
         }
         setFormIsSubmitting(false);
-    }
+    };
 
     return (
         <div className="py-8 lg:py-10 text-left px-4 mx-auto max-w-screen-md">
@@ -56,7 +56,6 @@ const ContactUs = (props: Props) => {
                         Subject
                     </label>
                     <input
-
                         name="subject"
                         type="text"
                         id="subject"
@@ -77,10 +76,7 @@ const ContactUs = (props: Props) => {
                         required
                     ></textarea>
                 </div>
-                <button
-                    type="submit"
-                    className={`btn btn-blue font-normal ${formIsSubmitting ? "cursor-wait opacity-70" : ""}`}
-                >
+                <button type="submit" className={`btn btn-blue font-normal ${formIsSubmitting ? "cursor-wait opacity-70" : ""}`}>
                     Send message
                 </button>
             </form>

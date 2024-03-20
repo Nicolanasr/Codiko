@@ -13,7 +13,7 @@ const ServicesNavbar = ({ data }: Props) => {
     const path = usePathname();
 
     return (
-        <nav className="pr-12 md:sticky top-0 h-fit py-20">
+        <nav className="pr-12 md:sticky top-0 h-fit py-20 max-w-sm">
             <ul className="space-y-8">
                 {data?.map((item, index) => {
                     const url = `/services/${item.slug}`;
@@ -22,7 +22,7 @@ const ServicesNavbar = ({ data }: Props) => {
                         <li key={url} className="">
                             <Link
                                 href={url}
-                                className={`group relative text-xl ${path === url ? "text-gray-200 font-bold text-opacity-100" : "text-gray-400 text-opacity-30 "
+                                className={`group block relative text-xl ${path === url ? "text-gray-200 font-bold text-opacity-100" : "text-gray-400 text-opacity-30 "
                                     } hover:text-gray-50 hover:text-opacity-100 transition-all`}
                             >
                                 {twoDigits(index + 1)} {item.title}{" "}

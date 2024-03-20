@@ -38,7 +38,7 @@ const Header = (props: Props) => {
                 <nav className="mx-16 flex-1 hidden md:block">
                     <ul className="flex justify-between max-w-lg w-full lg:gap-8 items-center ">
                         <li className="">
-                            <Link href="/about-us" className="group text-gray-300 hver:text-white relative transition-all px-4 py-2">
+                            <Link href="#about-us" className="group text-gray-300 hver:text-white relative transition-all px-4 py-2">
                                 About Us
                                 <span className="h-[2px] absolute bottom-0 left-0 right-unset w-0 group-hover:w-full transition-all bg-lightblue"></span>
                             </Link>

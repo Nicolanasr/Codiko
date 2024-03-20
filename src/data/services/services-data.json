@@ -1,30 +1,50 @@
 {
 	"services": [
 		{
-			"title": "Design and Development",
+			"title": "Websites & Mobile Apps UX UI Design Development",
 			"slug": "design-development",
-			"short_description": "We create awesome mobile apps and websites that look great and work like a charm! Whether you're on your phone or computer, we've got you covered with designs that pop and features that make life easier.",
+			"short_description": "CODIKO creates comprehensive, innovative, SEO oriented and responsive web designs that go beyond mobile-friendly and look great on any display.",
 			"order": 1,
-			"image": "/christina-wocintechchat-com-p0qKsW3uqA4-unsplash 1.png",
-			"features": ["feature 1", "feaure 2", "feaure 3"],
-			"full_description": "<h4>Key Outputs</h4> <h4>How we make it happen</h4>"
+			"features": [
+				"Responsive Web Design / Development",
+				"Mobile App Design",
+				"Mobile App Development",
+				"Ecommerce solutions",
+				"Fast Loading Speed",
+				"End-to-End Testing"
+			],
+			"full_description": "<h4>Key Output</h4><p>Our aim is to deliver the trendiest, most appealing and future proof websites, products, portals and web applications, built on the latest technologies and frameworks, customized to meet your business objectives.</p> <p>Good user experience and interface is the key to customers' loyalty. Using the latest technologies we offer our clients a unique user interface and experience on cross platform applications which allows you to read in an easy way and navigate across a wide range of devices.</p> <h4>Custom Native Mobile Application design and development:</h4> <p> Your customers are going mobile! As a member of the IOS app development program and a registered Google Play development company, we have access to the latest tools to deliver cost-effective and timely mobile apps.</p>",
+			"animation": "/lottie/design-development.json"
 		},
 		{
 			"title": "Optimization and SEO",
 			"slug": "optimization-seo",
-			"short_description": "We're on a mission to get your website noticed by Google using some SEO magic. And to top it off, we'll make sure it loads faster than you can say \"instant gratification\" so your visitors have a smooth and speedy experience.",
-			"order": 2
+			"short_description": "Whether you are starting a small project or need to host a high-traffic enterprise site we give you a trustworthy and affordable way to do it. We pride ourselves on providing fast, reliable hosting with exceptional customer service. ",
+			"order": 2,
+			"animation": "/lottie/seo.json",
+			"features": ["Speed Optimization", "SEO Boost"]
 		},
 		{
-			"title": "Hosting and Maintenance",
+			"title": "Web Setup, Hosting & Emails",
 			"slug": "hosting-maintenance",
 			"short_description": "We handle all the technical stuff, from setting up reliable hosting services to ensuring everything runs smoothly and securely. With regular updates, backups, and monitoring, we handle your online presence, so you can focus on what you do best: running your business.",
-			"order": 3
+			"full_description": "<h4>Key Output</h4> <p>Our hosting servers are ultra-fast, stable and secured offering 100% guaranteed up-time. With affordable shared servers hosting to VPS (virtual private servers) and dedicated servers hosting plans options you'll find exactly the needed space, speed and reliability.</p> <h4>Maintenance & Support</h4> <p>Providing around-the-clock support to all our customers. Our support team is ready to solve any problem you may encounter, at anytime. Codiko leaves no client behind. Not only do we build and submit our state of the art work, we also follow up with our clients to make sure that they are completely satisfied. Equipped with years of experience, fueled with passion, our support team is always waiting to take new challenges and overcome them. We handle all of this under one roof, with excellent project management, perfectionism, and most of all, dedication.​</p>",
+			"order": 3,
+			"animation": "/lottie/maintenance.json",
+			"features": [
+				"Custom Domain name",
+				"Custome Email Address",
+				"Low-Charge Hosting",
+				"Fast Hosting Providers",
+				"24/7 Support",
+				"Latest Security Updates"
+			]
 		},
 		{
-			"title": "Custom Software Development",
-			"slug": "custom-software-development",
+			"title": "Custom Software Tailor Made Solutions",
+			"slug": "custom-software",
 			"short_description": "We craft personalized solutions designed exclusively for your business. From concept to completion, we work closely with you to understand your needs and create software that streamlines your operations, boosts efficiency, and helps you achieve your goals.",
+			"full_description": "<h4>Advanced tailor-made solutions and enterprise web applications:</h4> <p> CODIKO has an extensive experience building custom business applications ranging from custom e-commerce solutions to large scale ERP, CRM and HRM systems. </p> <p>We also offer a custom-made responsive content management system to help customers build and manage the content of their own website. Our CMS solution, CUFEX, is scalable from small businesses to large corporations providing a central interface allowing cost and time effective content management. CUFEX gives you complete control over your site and content, with the flexibility and scalability to adapt to your changing needs.</p>",
 			"order": 4
 		}
 	]

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import { FaEnvelope, FaPhoneAlt, FaInstagram, FaWhatsapp, FaFacebook, FaLinkedin } from "react-icons/fa"
+import { FaEnvelope, FaPhoneAlt, FaInstagram, FaWhatsapp, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 type Props = {};
 
@@ -13,17 +13,11 @@ const Footer = (props: Props) => {
                 <div className="container py-8 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
                     <div className="">
                         <Link href="/" className="inline-block">
-                            <Image
-                                src="/codiko-logo.png"
-                                height={50}
-                                width={130}
-                                alt="codiko logo"
-                                className="object-contain"
-                            />
+                            <Image src="/codiko-logo.png" height={50} width={130} alt="codiko logo" className="object-contain" />
                         </Link>
                         <p className="text-xs mt-4 tracking-wider leading-loose text-opacity-50 font-light max-w-sm">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique temporibus tempora quia, quibusdam ducimus harum
-                            provident consequatur nostrum
+                            Codiko is your gateway to innovative and transformative digital solutions.We are committed to reshaping the way businesses
+                            thrive in the digital realm.{" "}
                         </p>
                         <div className="h-[1px] bg-lightblue w-24 mt-8"></div>
                     </div>
@@ -39,7 +33,7 @@ const Footer = (props: Props) => {
                                 <Link href="#about-us">About</Link>
                             </li>
                             <li>
-                                <Link href="#services">Services</Link>
+                                <Link href="/services">Services</Link>
                             </li>
                             <li>
                                 <Link href="#projects">Pojects</Link>
@@ -61,17 +55,33 @@ const Footer = (props: Props) => {
                                 <a href="tel:+96171365663">+961 71 365 663</a>
                             </div>
 
-                            <div className="flex gap-6 mt-6" >
-                                <Link href="https://www.instagram.com/codikodev/" target="_blank" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all">
+                            <div className="flex gap-6 mt-6">
+                                <Link
+                                    href="https://www.instagram.com/codikodev/"
+                                    target="_blank"
+                                    className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all"
+                                >
                                     <FaInstagram className=" m-auto w-full opacity-70 h-full group-hover:opacity-100 transition-all" />
                                 </Link>
-                                <Link href="https://wa.me/+96171365663" target="_blank" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all">
+                                <Link
+                                    href="https://wa.me/+96171365663"
+                                    target="_blank"
+                                    className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all"
+                                >
                                     <FaWhatsapp className=" m-auto w-full opacity-70 h-full group-hover:opacity-100 transition-all" />
                                 </Link>
-                                <Link href="#" target="_blank" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all">
+                                <Link
+                                    href="#"
+                                    target="_blank"
+                                    className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all"
+                                >
                                     <FaFacebook className=" m-auto w-full opacity-70 h-full group-hover:opacity-100 transition-all" />
                                 </Link>
-                                <Link href="#" target="_blank" className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all">
+                                <Link
+                                    href="#"
+                                    target="_blank"
+                                    className="group rounded-full p-2 w-10 h-10 border border-lightblue hover:bg-lightblue transition-all"
+                                >
                                     <FaLinkedin className=" m-auto w-full opacity-70 h-full group-hover:opacity-100 transition-all" />
                                 </Link>
                             </div>
