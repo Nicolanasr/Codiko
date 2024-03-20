@@ -1,4 +1,4 @@
-import ServicesLayout from "@/Components/Layout/ServicesLayout";
+import ServicesLayout from "@/app/services/layout";
 import React from "react";
 import { Metadata } from "next";
 
@@ -22,11 +22,10 @@ const getData = async () => {
 const MyServicePage = async ({ params }: any) => {
     const data = await getData();
     const pageData: ServiceType | undefined = data.find((item: ServiceType) => item.slug === params.service);
-    console.log(data);
 
     return (
         pageData && (
-            <ServicesLayout servicesData={data}>
+            < >
                 <div className="mt-4">
                     <h2 className="tracking-normal">
                         <span className="text-lightblue text-xl font-medium">{twoDigits(pageData?.order)}. </span> {pageData?.title}
@@ -66,7 +65,7 @@ const MyServicePage = async ({ params }: any) => {
                         )}
                     </div>
                 </div>
-            </ServicesLayout>
+            </>
         )
     );
 };
