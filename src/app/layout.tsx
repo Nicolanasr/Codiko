@@ -11,7 +11,7 @@ const OpenSans = Open_Sans({ weight: ["300", "400", "500", "700"], subsets: ["la
 export const metadata: Metadata = {
     title: "Codiko - Web Design & Software Development Solutions",
     description:
-        "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
+        "Elevate your online presence with our top-tier web design and software development services. Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
     metadataBase: new URL("https://codikodev.com/"),
     keywords: [
         "web design",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         type: "website",
         title: "Codiko - Web Design & Software Development Solutions",
         description:
-            "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
+            "Elevate your online presence with our top-tier web design and software development services. Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
         images: ["https://codikodev.com/collaboration.jpg"],
         url: "https://codikodev.com/",
     },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Codiko - Web Design & Software Development Solutions",
         description:
-            "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
+            "Elevate your online presence with our top-tier web design and software development services. Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
         images: ["https://codikodev.com/collaboration.jpg"],
     },
 };
