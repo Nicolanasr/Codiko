@@ -32,7 +32,6 @@ const ServicesPage = async (props: Props) => {
     return (
         <h1>
             <Link className='my-32' href={`/services/${data[0]?.slug}`}>Our services</Link>
-
         </h1>
     )
 }
