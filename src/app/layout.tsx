@@ -12,9 +12,19 @@ const mukta_vaani = Mukta_Vaani({ weight: ["300", "400", "500", "700"], subsets:
 export const metadata: Metadata = {
     title: "Codiko - Web Design & Software Development Solutions",
     description: "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
+
     openGraph: {
+        type: "website",
         title: "Codiko - Web Design & Software Development Solutions",
         description: "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
+        images: ['/collaboration.jpg'],
+        url: "https://codikodev.com/"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Codiko - Web Design & Software Development Solutions",
+        description: "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
+        images: ['/collaboration.jpg'],
     }
 };
 
