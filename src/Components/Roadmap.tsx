@@ -89,28 +89,28 @@ const howWeDoIt = [
         text: "Launch",
         description:
             "Once everything is finalized and approved, we'll launch your website, making it live for the world to see.",
-        icon: "",
+        icon: "/lottie/launch.json",
     },
     {
         title: "Phase 8",
         text: "Post-Launch Support",
         description:
             "Our commitment doesn't end with the launch. We offer ongoing support and maintenance services to ensure your website remains secure, up-to-date, and performing at its best. We're always available to address any questions or concerns you may have.",
-        icon: "",
+        icon: "/lottie/support.json",
     },
     {
         title: "Phase 9",
         text: "Monitoring and Optimization",
         description:
             "We continuously monitor your website's performance and user behavior, making data-driven optimizations to enhance its effectiveness and achieve your desired goals.",
-        icon: "",
+        icon: "/lottie/optimization.json",
     },
     {
         title: "Phase 10",
         text: "Continued Collaboration",
         description:
             "We believe in building long-term partnerships with our clients. As your business evolves, we'll be there to provide guidance and support, helping you leverage your website as a powerful tool for growth and success.",
-        icon: "",
+        icon: "/lottie/collaboration.json",
     },
 ];
 
