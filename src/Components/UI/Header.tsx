@@ -36,7 +36,7 @@ const Header = (props: Props) => {
                 </Link>
 
                 <nav className="mx-16 flex-1 hidden md:block">
-                    <ul className="flex justify-between max-w-xl w-full lg:gap-8 items-center ">
+                    <ul className="flex justify-between max-w-2xl w-full lg:gap-8 items-center ">
                         <li className="">
                             <Link href="/#about-us" className="group text-gray-300 hver:text-white relative transition-all px-4 py-2">
                                 About Us

@@ -20,8 +20,16 @@ body {
 	.blog-body h4 {
 		@apply pt-8 pb-4;
 	}
-	.blog-body p {
-		@apply my-2;
+	.blog-body p,
+	.blog-body li {
+		@apply my-4 tracking-wide;
+	}
+
+	.blog-body li {
+		@apply my-6;
+	}
+	.blog-body a {
+		@apply text-lightblue underline;
 	}
 
 	.btn {

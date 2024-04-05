@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto, Mukta_Vaani } from "next/font/google";
+import { Open_Sans, Mukta_Vaani } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/UI/Header";
 import Footer from "@/Components/UI/Footer";
 import { Toaster } from "react-hot-toast";
 
-const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"], subsets: ["cyrillic", "latin"] });
 const mukta_vaani = Mukta_Vaani({ weight: ["300", "400", "500", "700"], subsets: ["latin"] });
+const OpenSans = Open_Sans({ weight: ["300", "400", "500", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Codiko - Web Design & Software Development Solutions",
@@ -61,7 +61,7 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png" sizes="32x32" />
             </head>
-            <body className={mukta_vaani.className}>
+            <body className={OpenSans.className}>
                 <Toaster />
                 <Header />
                 <main>{children}</main>
