@@ -30,7 +30,10 @@ const ServicesPage = async (props: Props) => {
     redirect(`/services/${data[0]?.slug}`)
 
     return (
-        <Link className='my-32' href={`/services/${data[0]?.slug}`}>{data[0]?.title}</Link>
+        <h1>
+            <Link className='my-32' href={`/services/${data[0]?.slug}`}>{data[0]?.title}</Link>
+
+        </h1>
     )
 }
 
