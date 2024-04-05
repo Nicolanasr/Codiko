@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     description:
         "Elevate your online presence with our top-tier web design and software development services. Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
     metadataBase: new URL("https://codikodev.com/"),
+    alternates: {
+        canonical: "/"
+    },
     keywords: [
         "web design",
         "web design agency",
@@ -31,7 +34,6 @@ export const metadata: Metadata = {
         "SEO optimization",
         "User interface design",
     ],
-
     openGraph: {
         type: "website",
         title: "Codiko - Web Design & Software Development Solutions",
