@@ -32,7 +32,7 @@ const BlogDetailsPage = async ({ params }: any) => {
         <div className="container mt-28 mb-14">
             <div className="mb-4 md:mb-0 w-full mx-auto relative">
                 <div className="px-4 lg:px-0">
-                    <h2 className="text-4xl font-semibold  leading-tight">{data.title}</h2>
+                    <h1 className="text-4xl font-semibold  leading-tight">{data.title}</h1>
                     <div>
                         <span className="py-2 text-lightblue inline-flex items-center justify-center mb-2">
                             {data.type}

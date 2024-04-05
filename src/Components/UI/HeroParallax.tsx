@@ -98,7 +98,7 @@ export const Header = () => {
                     <CardWithNumber number={40} text="PRODUCTS" />
                 </div>
                 <div className="ml-auto w-fit">
-                    <Image src="/abstract-shape 1.png" height={50} width={50} className="object-contain opacity-90" alt="" />
+                    <Image src="/abstract-shape 1.png" height={50} width={50} className="object-contain opacity-90" alt="shape" />
                 </div>
             </div>
 

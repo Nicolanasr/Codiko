@@ -49,7 +49,7 @@ const HeroSection = (props: Props) => {
 Optimization`} />
                             </div>
                             <div className="ml-auto w-fit">
-                                <Image src="/abstract-shape 1.png" height={50} width={50} className="object-contain opacity-90" alt="" />
+                                <Image src="/abstract-shape 1.png" height={50} width={50} className="object-contain opacity-90" alt="hero-shape" />
                             </div>
                         </div>
                         <div className="flex-1 hidden md:flex m-auto h-96 pb-12">

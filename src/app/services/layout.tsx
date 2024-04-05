@@ -20,7 +20,7 @@ const ServicesLayout = async ({ children }: Props) => {
 
     return (
         <div className="relative">
-            <Image src="/background.png" fill alt="" quality={100} className="opacity-30 object-contain object-right" />
+            <Image src="/background.png" fill alt="services" quality={100} className="opacity-30 object-contain object-right" />
             <div className="container py-20" >
                 <div className="flex flex-col md:flex-row relative">
                     <ServicesNavbar data={data} />

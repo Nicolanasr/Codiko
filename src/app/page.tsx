@@ -128,7 +128,7 @@ export default async function Home() {
                 <div className="relative">
                     <div className="absolute top-0 left-0 right-0 -z-10 h-60 bg-[#222931] rounde-bl-md rounded-br-md flex">
                         <div className="h-[80%] w-full ml-auto mt-auto relative">
-                            <Image src="/Group 2.png" fill className="object-contain object-right-bottom" alt="" />
+                            <Image src="/Group 2.png" fill className="object-contain object-right-bottom" alt="why-us" />
                         </div>
                     </div>
                     <div className="md:px-8 pt-8 flex flex-col md:flex-row">
@@ -229,7 +229,7 @@ export default async function Home() {
 
             <section id="contact-us" className="mt-32">
                 <div className="relative text-center w-full pb-20 container">
-                    <Image src="/cover-image 1.png" fill className="-z-[1] object-contain object-right-bottom" alt="" />
+                    <Image src="/cover-image 1.png" fill className="-z-[1] object-contain object-right-bottom" alt="contact" />
 
                     <div className="h-24 bg-opacity-70 mb-8 w-[1px] mx-auto bg-lightblue"></div>
 

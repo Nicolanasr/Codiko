@@ -39,9 +39,9 @@ const MyServicePage = async ({ params }: any) => {
         data && (
             < >
                 <div className="mt-4" >
-                    <h2 className="tracking-normal">
+                    <h1 className=" text-4xl tracking-normal">
                         <span className="text-lightblue text-xl font-medium">{twoDigits(data?.order)}. </span> {data?.title}
-                    </h2>
+                    </h1>
                     <div className="flex flex-col lg:flex-row gap-4 mt-2 services-description">
                         <div className="flex-1 ">
                             <h4>Overview:</h4>
@@ -64,7 +64,7 @@ const MyServicePage = async ({ params }: any) => {
                                 }
                                 {data.image && (
                                     <div className="relative w-full ">
-                                        <Image src={data.image} height={500} width={500} alt="" className="object-cover" />
+                                        <Image src={data.image} height={500} width={500} alt={data.title} className="object-cover" />
                                     </div>
                                 )}
                                 {data.features && (
