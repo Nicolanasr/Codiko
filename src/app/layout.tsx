@@ -8,25 +8,45 @@ import { Toaster } from "react-hot-toast";
 const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"], subsets: ["cyrillic", "latin"] });
 const mukta_vaani = Mukta_Vaani({ weight: ["300", "400", "500", "700"], subsets: ["latin"] });
 
-
 export const metadata: Metadata = {
     title: "Codiko - Web Design & Software Development Solutions",
-    description: "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
+    description:
+        "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
     metadataBase: new URL("https://codikodev.com/"),
+    keywords: [
+        "web design",
+        "web design agency",
+        "web development",
+        "Software development solutions",
+        "Custom web development",
+        "Responsive website design",
+        "Front-end development",
+        "Back-end development",
+        "Mobile app development",
+        "E-commerce website design",
+        "UI/UX design",
+        "Content management systems (CMS)",
+        "Web application development",
+        "Website maintenance",
+        "SEO optimization",
+        "User interface design",
+    ],
 
     openGraph: {
         type: "website",
         title: "Codiko - Web Design & Software Development Solutions",
-        description: "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
-        images: ['https://codikodev.com/collaboration.jpg'],
+        description:
+            "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
+        images: ["https://codikodev.com/collaboration.jpg"],
         url: "https://codikodev.com/",
     },
     twitter: {
         card: "summary_large_image",
         title: "Codiko - Web Design & Software Development Solutions",
-        description: "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
-        images: ['https://codikodev.com/collaboration.jpg'],
-    }
+        description:
+            "Elevate your online presence with our top-tier web design and software development services. From stunning websites to cutting-edge software solutions, Codiko delivers excellence tailored to your needs. Discover how we can transform your digital landscape today.",
+        images: ["https://codikodev.com/collaboration.jpg"],
+    },
 };
 
 export default function RootLayout({

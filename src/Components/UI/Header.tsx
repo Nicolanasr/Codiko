@@ -36,7 +36,7 @@ const Header = (props: Props) => {
                 </Link>
 
                 <nav className="mx-16 flex-1 hidden md:block">
-                    <ul className="flex justify-between max-w-lg w-full lg:gap-8 items-center ">
+                    <ul className="flex justify-between max-w-xl w-full lg:gap-8 items-center ">
                         <li className="">
                             <Link href="/#about-us" className="group text-gray-300 hver:text-white relative transition-all px-4 py-2">
                                 About Us
@@ -58,6 +58,12 @@ const Header = (props: Props) => {
                         <li>
                             <Link href="/#how-we-do-it" className="group text-gray-300 hover:text-white relative transition-all px-4 py-2">
                                 Our Process
+                                <span className="h-[2px] absolute bottom-0 left-0 right-unset w-0 group-hover:w-full transition-all bg-lightblue"></span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/blogs" className="group text-gray-300 hover:text-white relative transition-all px-4 py-2">
+                                Blogs
                                 <span className="h-[2px] absolute bottom-0 left-0 right-unset w-0 group-hover:w-full transition-all bg-lightblue"></span>
                             </Link>
                         </li>
