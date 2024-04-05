@@ -38,7 +38,7 @@ const Header = (props: Props) => {
                 <nav className="mx-16 flex-1 hidden md:block">
                     <ul className="flex justify-between max-w-lg w-full lg:gap-8 items-center ">
                         <li className="">
-                            <Link href="#about-us" className="group text-gray-300 hver:text-white relative transition-all px-4 py-2">
+                            <Link href="/#about-us" className="group text-gray-300 hver:text-white relative transition-all px-4 py-2">
                                 About Us
                                 <span className="h-[2px] absolute bottom-0 left-0 right-unset w-0 group-hover:w-full transition-all bg-lightblue"></span>
                             </Link>
@@ -56,7 +56,7 @@ const Header = (props: Props) => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#how-we-do-it" className="group text-gray-300 hover:text-white relative transition-all px-4 py-2">
+                            <Link href="/#how-we-do-it" className="group text-gray-300 hover:text-white relative transition-all px-4 py-2">
                                 Our Process
                                 <span className="h-[2px] absolute bottom-0 left-0 right-unset w-0 group-hover:w-full transition-all bg-lightblue"></span>
                             </Link>
@@ -64,7 +64,7 @@ const Header = (props: Props) => {
                     </ul>
                 </nav>
                 <Link
-                    href="#contact-us"
+                    href="/#contact-us"
                     className="whitespace-nowrap hidden md:block md:ml-auto btn btn-trans-white lg:px-8 text-sm font-normal tracking-wide"
                 >
                     CONTACT US

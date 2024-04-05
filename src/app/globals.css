@@ -13,7 +13,7 @@ body {
 
 @layer base {
 	body {
-		@apply text-slate-300;
+		@apply text-gray-300;
 	}
 	.btn {
 		@apply px-6 py-2 rounded-md font-[500] inline-block;
@@ -36,7 +36,7 @@ body {
 		@apply font-semibold text-3xl tracking-wide;
 	}
 	.services-description h4 {
-		@apply text-xl font-bold text-gray-200 capitalize mt-6;
+		@apply text-xl font-bold capitalize mt-6;
 	}
 	.services-description p {
 		@apply text-gray-400 leading-loose tracking-wider mt-2;

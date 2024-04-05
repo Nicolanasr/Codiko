@@ -8,8 +8,12 @@ import Image from "next/image";
 import LottiePlayer from "@/Components/UI/LottiePlayer";
 
 export const metadata: Metadata = {
-    title: "Our Services - Codiko",
-    description: "Our Services - Codiko",
+    title: "Codiko - Comprehensive Web Design & Software Development Services",
+    description: "Explore a comprehensive suite of services encompassing web design and software development tailored to meet your unique business needs. From captivating website creation to robust software solutions, Codiko delivers excellence with a focus on innovation and client satisfaction. Discover how we can elevate your digital presence today.",
+    openGraph: {
+        title: "Comprehensive Web Design & Software Development Services  - Codiko",
+        description: "xplore a comprehensive suite of services encompassing web design and software development tailored to meet your unique business needs. From captivating website creation to robust software solutions, Codiko delivers excellence with a focus on innovation and client satisfaction. Discover how we can elevate your digital presence today.",
+    }
 };
 
 
