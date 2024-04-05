@@ -6,6 +6,8 @@ type Props = {};
 
 import path from "path";
 import { promises as fs } from "fs";
+import Image from "next/image";
+import Link from "next/link";
 
 const getData = async () => {
     const jsonDirectory = path.join(process.cwd(), "/src/data/blogs");
@@ -49,8 +51,12 @@ const BlogPage = async (props: Props) => {
                                     </span>
                                     <span className="text-sm">{timeAgo.format(new Date(item.createdDate))}</span>
                                 </div>
-                                <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    <a href={`/blogs/${item.slug}`}>{item.title}</a>
+                                <div className="h-56 w-full relative">
+                                    <Image src={item.image || ""} className="object-cover" fill alt={item.title} />
+                                </div>
+
+                                <h2 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    <Link href={`/blogs/${item.slug}`}>{item.title}</Link>
                                 </h2>
                                 <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                                     {item.shortDescription}
@@ -59,7 +65,7 @@ const BlogPage = async (props: Props) => {
                                     <div className="flex items-center space-x-4">
                                         <span className="font-medium dark:text-white">{item.author}</span>
                                     </div>
-                                    <a
+                                    <Link
                                         href={`/blogs/${item.slug}`}
                                         className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
                                     >
@@ -71,7 +77,7 @@ const BlogPage = async (props: Props) => {
                                                 clip-rule="evenodd"
                                             ></path>
                                         </svg>
-                                    </a>
+                                    </Link>
                                 </div>
                             </article>
                         );

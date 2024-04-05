@@ -9,17 +9,26 @@ import ContactUs from "@/Components/ContactUs";
 import path from "path";
 import { promises as fs } from "fs";
 import Roadmap from "@/Components/Roadmap";
+import TimeAgo from "javascript-time-ago";
+import en from 'javascript-time-ago/locale/en'
 
 const getData = async () => {
     const jsonDirectory = path.join(process.cwd(), "/src/data/services");
     const fileContents: any = await fs.readFile(jsonDirectory + "/services-data.json", "utf8");
 
-    return JSON.parse(fileContents)["services"];
-};
+    const jsonDirectoryBlogs = path.join(process.cwd(), "/src/data/blogs");
+    const fileContentsBlogs: any = await fs.readFile(jsonDirectoryBlogs + "/blogs-data.json", "utf8");
 
+    return { servicesData: JSON.parse(fileContents)["services"], blogsData: JSON.parse(fileContentsBlogs)["blogs"] };
+};
+TimeAgo.addDefaultLocale(en);
 
 export default async function Home() {
-    const servicesData: ServiceType[] = await getData();
+    const data: any = await getData();
+    const servicesData: ServiceType[] = data["servicesData"];
+    const blogsData: BlogsType[] = data["blogsData"];
+
+    const timeAgo = new TimeAgo('en-US')
 
     return (
         <>
@@ -91,7 +100,6 @@ export default async function Home() {
             </section>
 
             <section id="why-us" className="container relative">
-
                 <div className="bg-[#222931] relative rounde-tl-md rounded-tr-md">
                     <h2 className="text-center font-extrabold text-3xl tracking-widest h-fit relative -top-[18px]">WHY US</h2>
                     <ul className="tracking-wider text-left justify-center gap-4 md:justify-between mx-auto px-10 py-2 md:py-10  flex-wrap">
@@ -155,11 +163,8 @@ export default async function Home() {
                     {/* <p className="mt-4 tracking-wide max-w-lg mx-auto text-center">By following this structured workflow, we ensure a smooth and successful journey from concept to launch, delivering a high-quality website that meets your objectives and exceeds your expectations.</p> */}
                     <div className="mt-12">
                         <Roadmap />
-
                     </div>
-
                 </div>
-
             </section>
 
             {/* <section id="projects" className="mt-20">
@@ -183,6 +188,44 @@ export default async function Home() {
                     />
                 </div>
             </section> */}
+
+            <section id="blogs" className="mt-24">
+                <div className="container">
+                    <h2 className="text-center">Blogs</h2>
+                    <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        {blogsData.map((blog: BlogsType, index: number) => (
+                            <div key={blog.slug}>
+                                <Link
+                                    rel="noopener noreferrer"
+                                    href={`blogs/${blog.slug}`}
+                                    className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50"
+                                >
+                                    <div className="relative h-56 w-full">
+                                        <Image
+                                            className="object-cover w-full rounded dark:bg-gray-500"
+                                            fill
+                                            src={blog.image || ""}
+                                            alt={blog.title}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <h3 className="mt-2 text-2xl font-semibold group-hover:underline group-focus:underline">
+                                            {blog.title}
+                                        </h3>
+                                        <span className="text-xs dark:text-gray-600">{blog.type} • {timeAgo.format(new Date(blog.createdDate))}</span>
+                                        <p className="mt-3">
+                                            {blog.shortDescription}
+                                        </p>
+                                    </div>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                    <Link href="/blogs" className="block w-fit btn btn-blue mx-auto mt-9" >
+                        Load more posts
+                    </Link>
+                </div>
+            </section>
 
             <section id="contact-us" className="mt-32">
                 <div className="relative text-center w-full pb-20 container">

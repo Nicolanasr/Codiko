@@ -15,9 +15,15 @@ body {
 	body {
 		@apply text-gray-300;
 	}
-	.blog-body h2 {
+	.blog-body h2,
+	.blog-body h3,
+	.blog-body h4 {
 		@apply pt-8 pb-4;
 	}
+	.blog-body p {
+		@apply my-2;
+	}
+
 	.btn {
 		@apply px-6 py-2 rounded-md font-[500] inline-block;
 	}
