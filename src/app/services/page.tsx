@@ -27,11 +27,11 @@ export const metadata: Metadata = {
 const ServicesPage = async (props: Props) => {
     const data: ServiceType[] = await getData();
 
-    redirect(`/services/${data[0]?.slug}`)
+    // redirect(`/services/${data[0]?.slug}`)
 
     return (
         <h1>
-            <Link className='my-32' href={`/services/${data[0]?.slug}`}>{data[0]?.title}</Link>
+            Our services
 
         </h1>
     )
